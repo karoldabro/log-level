@@ -34,9 +34,19 @@ enum Level: int
     /**
      * informational messages
      */
-    CASE INFORMATIONAL = 6;
+    CASE INFO = 6;
     /**
      * debug-level messages
      */
     CASE DEBUG = 7;
+
+    /**
+     * Change log level name to lower case
+     *
+     * @return string
+     */
+    public function toLower(): string
+    {
+        return strtolower($this->name);
+    }
 }
